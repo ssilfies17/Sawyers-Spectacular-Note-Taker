@@ -33,13 +33,10 @@ notes.delete('/:note_id', (req, res) => {
   readFromFile('./db/notes.json')
     .then((data) => JSON.parse(data))
     .then((json) => {
-      // Make a new array of all tips except the one with the ID provided in the URL
       const result = json.filter((note) => note.note_id !== noteId);
 
-      // Save that array to the filesystem
       writeToFile('./db/notes.json', result);
 
-      // Respond to the DELETE request
       res.json(`Item ${noteId} has been deleted 🗑️`);
     });
 });

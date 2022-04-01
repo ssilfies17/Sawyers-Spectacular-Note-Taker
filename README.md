@@ -13,44 +13,27 @@ A helpful, handy way to keep track of the ever-changing and evolving carousel of
 
 ## Installation
 
-All that is required to get this bad boy up and running is you, the User, should generate a `package.json` file with the following dependencies using the following command:
+All that is required to get this bad boy up and running is you, the User, should run the following command in an integrated terminal:
 
-```bash 
-npm init 
+```bash
+npm install
 ```
-Once your `package.json` file has been created ensure it has the following dependency:
-
-```
-"dependencies": {
-    "inquirer": "^6.3.1"
-    },
-
-```
-
 
 ## Usage
 
 1. Open an integrated terminal.
 
-2. Double check that you have `package.json` with the required dependencies. 
+2. Double check that you have run the `npm install` command and have a `package-lock.json` file in the main directory of the project. 
 
 3. In terminal run the following command:
 
 ```bash
-node index.js
+npm start
 ```
 
-4. Following along with the prompts in the terminal. 
+4. Click the link in your console to your local host to view the front end interaction or use your favorite API develop/tester to view the back end interaction.
 
-```md
-
-![Demo-Screenshot](/assets/PromptDemoScreenshot.png)
-
-```
-
-5. Some markdown styling may be required to meet your particular needs, but the bulk of the monotony will be taken care of.
-
-6. Enjoy your README!
+6. Enjoy Sawyer's Spectacular Note Taker!
 
 
 ## Credits
